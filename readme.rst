@@ -1,7 +1,7 @@
 RapidSMS HTTP Gateway Tester
 ============================
 
-A typical setup for RapidSMS using an HTTP gateway looks like:
+When using RapidSMS with an HTTP gateway, messages usually flow like this:
 
     Handset<--->Gateway<-->RapidSMS
 
@@ -28,7 +28,7 @@ gateway service. Logs are written to a CSV file on the phone's SD card.
 When you're ready, load some airtime on your SIM, start SL4A, and run ``gwtest.py``. Note that this script currently doesn't use a wake lock (WTF!), and will stop if the phone goes to sleep. It's designed to be used on a phone that is plugged in and set to not sleep while charging. More on this at:
   http://code.google.com/p/android-scripting/wiki/FAQ#My_script_stops_working_when_the_screen_turns_off!_WTF?
 
-Kill the script when you've had enough, and find your log file in the phone's
+Kill the script when you've had enough, and find your log file in your phone's
 SL4A directory.
 
 **Log File Column Headers**
