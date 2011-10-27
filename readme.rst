@@ -25,6 +25,7 @@ gateway service. Logs are written to a CSV file on the phone's SD card.
   /mnt/sdcard/sl4a/scripts/gwtest.py
 - Add ``gateway_test`` to ``INSTALLED_APPS`` in settings.py, and restart your webserver
 
+
 When you're ready, load some airtime on your SIM, start SL4A, and run ``gwtest.py``. Note that this script currently doesn't use a wake lock (WTF!), and will stop if the phone goes to sleep. It's designed to be used on a phone that is plugged in and set to not sleep while charging. More on this at:
   http://code.google.com/p/android-scripting/wiki/FAQ#My_script_stops_working_when_the_screen_turns_off!_WTF?
 
